@@ -63,8 +63,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '984996087635',
     projectId: 'e2ee-chat-app-fe852',
     storageBucket: 'e2ee-chat-app-fe852.appspot.com',
-    iosClientId:
-        '984996087635-cajin3bn60uaarvbn4u1k6ggkk5j4gvc.apps.googleusercontent.com',
+    iosClientId: '984996087635-cajin3bn60uaarvbn4u1k6ggkk5j4gvc.apps.googleusercontent.com',
     iosBundleId: 'com.e2eeChat.e2eeChat',
   );
+
 }

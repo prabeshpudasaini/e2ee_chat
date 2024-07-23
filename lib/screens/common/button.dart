@@ -33,7 +33,7 @@ commonElevatedButton(
     onPressed: onPressed,
     child: Text(btnText),
     style: ElevatedButton.styleFrom(
-        primary: bgColor ?? AppColors.oppositeMsgDarkModeColor,
+        backgroundColor: bgColor ?? AppColors.oppositeMsgDarkModeColor,
         textStyle: TextStyleCollection.terminalTextStyle
             .copyWith(fontSize: fontSize ?? 16)),
   );

@@ -1,4 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:e2ee_chat/config/colors_collection.dart';
 import 'package:e2ee_chat/config/images_path_collection.dart';
@@ -14,6 +15,8 @@ import 'package:e2ee_chat/config/types.dart';
 import 'package:e2ee_chat/services/encryption_operations.dart';
 import 'package:e2ee_chat/services/local_database_services.dart';
 import 'package:e2ee_chat/services/toast_message_show.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter/widgets.dart';
 import 'package:loading_overlay/loading_overlay.dart';
 import 'package:provider/provider.dart';
 
@@ -164,8 +167,8 @@ class _ActivityControllerState extends State<ActivityController>
       child: PageView.builder(
         physics: const NeverScrollableScrollPhysics(),
         controller: Provider.of<ActivityProvider>(context).getPageController(),
-        scrollBehavior: const ScrollBehavior(
-            androidOverscrollIndicator: AndroidOverscrollIndicator.glow),
+        // scrollBehavior: const ScrollBehavior(
+        //     overscrollIndicator: AndroidOverscrollIndicator.glow),
         onPageChanged: (changedPageIndex) =>
             Provider.of<ActivityProvider>(context, listen: false)
                 .setUpdatedIndex(changedPageIndex),

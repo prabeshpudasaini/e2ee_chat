@@ -68,7 +68,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
     return Theme(
       data: Theme.of(context).copyWith(
-          backgroundColor: AppColors.getBgColor(_isDarkMode),
+          primaryColor: AppColors.getBgColor(_isDarkMode),
           dividerColor: AppColors.transparentColor),
       child: ExpansionTile(
         backgroundColor: AppColors.getBgColor(_isDarkMode),

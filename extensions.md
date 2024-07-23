@@ -1,0 +1,16 @@
+aaron-bond.better-comments
+dart-code.dart-code
+dart-code.flutter
+donjayamanne.githistory
+dracula-theme.theme-dracula
+equinusocio.vsc-material-theme
+equinusocio.vsc-material-theme-icons
+felixangelov.bloc
+gornivv.vscode-flutter-files
+jeroen-meijer.pubspec-assist
+nash.awesome-flutter-snippets
+pflannery.vscode-versionlens
+pkief.material-icon-theme
+streetsidesoftware.code-spell-checker
+usernamehw.errorlens
+vscjava.vscode-gradle

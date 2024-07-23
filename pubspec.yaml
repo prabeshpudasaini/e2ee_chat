@@ -43,7 +43,7 @@ dependencies:
   url_launcher: any
   permission_handler: any
   path_provider: any
-  record: any
+  record: ^4.4.4
   intl: any
   image_picker: any
   open_file_safe: ^3.2.3
@@ -62,7 +62,7 @@ dependencies:
   video_player: any
   smooth_page_indicator: any
   swipe_to: any
-  receive_sharing_intent: any
+  receive_sharing_intent: 1.5.4
   firebase_auth: any
   cloud_firestore: ^4.8.2
   google_sign_in: any

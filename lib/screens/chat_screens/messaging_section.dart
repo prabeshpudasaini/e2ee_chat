@@ -81,7 +81,7 @@ class _MessagingSectionState extends State<MessagingSection> {
 
     return SwipeTo(
       iconColor: AppColors.getIconColor(_isDarkMode),
-      onRightSwipe: () => _rightSwipe(messageId, messageData, _msgHolderId),
+      onRightSwipe: (_) => _rightSwipe(messageId, messageData, _msgHolderId),
       child: InkWell(
         onTap: () => onMessageTap(
             messageId, ChatMessageModel.copy(messageData), _selectedMessages),
