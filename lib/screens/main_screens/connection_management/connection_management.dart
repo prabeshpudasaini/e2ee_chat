@@ -110,7 +110,7 @@ class _ConnectionManagementScreenState extends State<ConnectionManagementScreen>
       child: TabBar(
         controller: _tabController,
         labelColor: AppColors.normalBlueColor,
-        indicatorPadding: const EdgeInsets.only(left: 20.0, right: 20.0),
+        indicatorPadding: const EdgeInsets.only(left: 15.0, right: 15.0),
         unselectedLabelColor: _isDarkMode
             ? AppColors.pureWhiteColor
             : AppColors.lightChatConnectionTextColor,

@@ -98,7 +98,7 @@ class _IntroScreensState extends State<IntroScreens> {
             ),
             _indicatorSection(),
             const SizedBox(
-              height: 30,
+              height: 20,
             ),
             const Expanded(child: Center()),
             _googleLogInButton(),
@@ -107,7 +107,7 @@ class _IntroScreensState extends State<IntroScreens> {
             ),
             _emailLogInButton(),
             const SizedBox(
-              height: 30,
+              height: 10,
             )
           ],
         ),
@@ -227,7 +227,7 @@ class _IntroScreensState extends State<IntroScreens> {
           children: [
             const Icon(
               Icons.email_outlined,
-              size: 30,
+              size: 35,
               color: AppColors.pureWhiteColor,
             ),
             const SizedBox(

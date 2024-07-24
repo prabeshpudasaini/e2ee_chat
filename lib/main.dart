@@ -35,7 +35,7 @@ class e2ee_chatEntry extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: AppText.appName,
         theme: ThemeData(
-            fontFamily: AppText.fontFamily,
+            // fontFamily: AppText.fontFamily,
             bottomSheetTheme: const BottomSheetThemeData(
                 backgroundColor: AppColors.transparentColor)),
         builder: (context, child) => MediaQuery(
