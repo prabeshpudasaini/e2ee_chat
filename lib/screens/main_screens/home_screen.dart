@@ -236,8 +236,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     fit: BoxFit.cover),
                 border: Border.all(
                     color: _isDarkMode
-                        ? AppColors.darkBorderGreenColor
-                        : AppColors.lightBorderGreenColor,
+                        ? AppColors.darkPrimaryColor
+                        : AppColors.lightPrimaryColor,
                     width: 3),
               ),
             ),
@@ -419,8 +419,8 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           decoration: BoxDecoration(
               color: _isDarkMode
-                  ? AppColors.darkBorderGreenColor
-                  : AppColors.lightBorderGreenColor,
+                  ? AppColors.darkPrimaryColor
+                  : AppColors.lightPrimaryColor,
               borderRadius: BorderRadius.circular(100)),
         ),
       );
@@ -446,8 +446,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     borderRadius: BorderRadius.circular(100),
                     border: Border.all(
                         color: _isDarkMode
-                            ? AppColors.darkBorderGreenColor
-                            : AppColors.lightBorderGreenColor,
+                            ? AppColors.darkPrimaryColor
+                            : AppColors.lightPrimaryColor,
                         width: 3),
                     image: DecorationImage(
                         image: NetworkImage(

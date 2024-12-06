@@ -416,7 +416,7 @@ class _MessagingSectionState extends State<MessagingSection> {
             decoration: BoxDecoration(
                 color: _isDarkMode
                     ? AppColors.oppositeMsgDarkModeColor
-                    : AppColors.lightBorderGreenColor,
+                    : AppColors.lightPrimaryColor,
                 borderRadius: BorderRadius.circular(8),
                 boxShadow: [
                   BoxShadow(
@@ -473,7 +473,7 @@ class _MessagingSectionState extends State<MessagingSection> {
                       icon: const Icon(
                         Icons.play_circle_outline_outlined,
                         size: 60,
-                        color: AppColors.darkBorderGreenColor,
+                        color: AppColors.darkPrimaryColor,
                       ),
                       onPressed: () async {
                         await SystemFileManagement.openFile(

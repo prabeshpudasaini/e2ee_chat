@@ -57,7 +57,7 @@ class _CommonSelectionScreenState extends State<CommonSelectionScreen> {
       isLoading: _isLoading,
       color: AppColors.pureBlackColor.withOpacity(0.6),
       progressIndicator: const CircularProgressIndicator(
-        color: AppColors.lightBorderGreenColor,
+        color: AppColors.lightPrimaryColor,
       ),
       child: WillPopScope(
         onWillPop: () async {

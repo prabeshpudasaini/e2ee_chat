@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:e2ee_chat/config/types.dart';
 import 'package:e2ee_chat/services/native_operations.dart';
 import 'package:e2ee_chat/services/toast_message_show.dart';
 

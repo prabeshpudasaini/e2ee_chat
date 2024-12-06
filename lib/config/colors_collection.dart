@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  static const Color splashScreenColor = Color(0xff0186fe);
+  static const Color splashScreenColor = Color(0xFF121212);
 
-  static const Color backgroundDarkMode = Color(0xff15162d);
-  static const Color backgroundLightMode = Color(0xfffefeff);
-  static const Color backgroundLightSecondaryMode = Color(0xffF3F7FC);
+  static const Color backgroundDarkMode = Color(0xff121212);
+  static const Color backgroundLightMode = Color(0xFFFFFFFF);
+  static const Color backgroundLightSecondaryMode = Color(0xffF5F5F5);
 
-  static const Color searchBarBgDarkMode = Color(0xff2e2d42);
-  static const Color searchBarBgLightMode = Color(0xffebebeb);
+  static const Color searchBarBgDarkMode = Color(0xff212121);
+  static const Color searchBarBgLightMode = Color(0xffFAFAFA);
 
   static const Color pureWhiteColor = Colors.white;
   static const Color pureBlackColor = Colors.black;
@@ -16,11 +16,11 @@ class AppColors {
   static const Color imageDarkBgColor = Color(0xffB2B2BC);
   static const Color imageLightBgColor = Color(0xffF5F5F5);
 
-  static const Color darkBorderGreenColor = Color(0xff6a1b9a);
-  static const Color lightBorderGreenColor = Color(0xff6a1b9a);
+  static const Color darkPrimaryColor = Color(0xffBB86FC);
+  static const Color lightPrimaryColor = Color(0xff6200EE);
 
-  static const Color darkInactiveIconColor = Colors.white60;
-  static const Color lightInactiveIconColor = Color(0xff9fa0a1);
+  static const Color darkInactiveIconColor = Color(0xffBDBDBD);
+  static const Color lightInactiveIconColor = Color(0xff757575);
 
   static const Color normalBlueColor = Colors.blue;
   static const Color transparentColor = Colors.transparent;
@@ -32,11 +32,11 @@ class AppColors {
 
   static const Color messageWritingSectionColor = Color(0xff484850);
 
-  static const Color myMsgDarkModeColor = Color(0xff6145D2);
-  static const Color myMsgLightModeColor = Color(0xff01bd47);
+  static const Color myMsgDarkModeColor = Color(0xffBB86FC);
+  static const Color myMsgLightModeColor = Color(0xff6200EE);
 
-  static const Color oppositeMsgDarkModeColor = Color(0xff303250);
-  static const Color oppositeMsgLightModeColor = Color(0xffffffff);
+  static const Color oppositeMsgDarkModeColor = Color(0xff616161);
+  static const Color oppositeMsgLightModeColor = Color(0xffEEEEEE);
 
   static const Color lightBlueColor = Colors.lightBlue;
 
@@ -52,18 +52,18 @@ class AppColors {
   static const Color lightMsgCreationColor = Color(0xffFFFEFE);
 
   static const Color orangeTextColor = Color(0xffffbf00);
-  static const Color lightTextColor = Color(0xff6d6e75);
-  static const Color lightSecondaryTextColor = Color(0xffb5b4b7);
-  static const Color lightActivityTextColor = Color(0xff71747a);
-  static const Color lightChatConnectionTextColor = Color(0xff696b71);
-  static const Color lightLatestMsgTextColor = Color(0xff9fa0a1);
+  static const Color lightTextColor = Color(0xff212121);
+  static const Color lightSecondaryTextColor = Color(0xff757575);
+  static const Color lightActivityTextColor = Color(0xff212121);
+  static const Color lightChatConnectionTextColor = Color(0xff212121);
+  static const Color lightLatestMsgTextColor = Color(0xff212121);
 
   static const Color lightModeBlueColor = Color(0xff0186fe);
   static const Color darkSelectionBlueColor = Color(0xff749cf2);
 
   /// Toast Message Color
-  static const Color successMsgColor = Color(0xff4BB543);
-  static const Color errorMsgColor = Color(0xffFF3333);
+  static const Color successMsgColor = Color(0xff4CAF50);
+  static const Color errorMsgColor = Color(0xffF44336);
   static const Color infoMsgColor = Color(0xff766EEF);
   static const Color warningMsgColor = Color(0xffEBD114);
 
@@ -91,16 +91,14 @@ class AppColors {
 
   static getIconColor(bool _isDarkMode, {bool? isOpposite}) {
     if (_isDarkMode) return AppColors.pureWhiteColor;
-    if (isOpposite == null) return AppColors.lightBorderGreenColor;
-    return isOpposite
-        ? AppColors.lightBorderGreenColor
-        : AppColors.pureWhiteColor;
+    if (isOpposite == null) return AppColors.lightPrimaryColor;
+    return isOpposite ? AppColors.lightPrimaryColor : AppColors.pureWhiteColor;
   }
 
   static getLoadingColor(bool _isDarkMode, bool isOppositeMsg) => _isDarkMode
       ? lightBlueColor
       : isOppositeMsg
-          ? lightBorderGreenColor
+          ? lightPrimaryColor
           : pureWhiteColor;
 
   static chatInfoTextColor(bool _isDarkMode) =>
@@ -116,8 +114,8 @@ class AppColors {
       _isDarkMode ? pureWhiteColor : lightChatConnectionTextColor;
 
   static getTextButtonColor(bool _isDarkMode, bool isOpposite) {
-    if (_isDarkMode) return null;
-    return isOpposite ? lightBorderGreenColor : pureWhiteColor;
+    if (_isDarkMode) return darkPrimaryColor;
+    return isOpposite ? lightPrimaryColor : pureWhiteColor;
   }
 
   static getElevatedBtnColor(bool isDarkMode) =>

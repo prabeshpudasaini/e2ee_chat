@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:e2ee_chat/config/colors_collection.dart';
-import 'package:e2ee_chat/screens/settings/support/donate_screen.dart';
 import 'package:e2ee_chat/screens/settings/support/send_email_to_support.dart';
 import 'package:e2ee_chat/services/navigation_management.dart';
 import 'package:provider/provider.dart';

@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:e2ee_chat/config/colors_collection.dart';
@@ -14,7 +13,6 @@ import 'package:e2ee_chat/services/device_specific_operations.dart';
 import 'package:e2ee_chat/services/local_data_management.dart';
 import 'package:provider/provider.dart';
 import 'firebase_options.dart';
-import 'package:e2ee_chat/screens/entry_screens/intro_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

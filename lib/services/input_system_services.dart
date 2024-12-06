@@ -436,7 +436,7 @@ class InputOption {
                 commonElevatedButton(
                     btnText: "Save",
                     onPressed: _onSaveButtonPressed,
-                    bgColor: AppColors.darkBorderGreenColor),
+                    bgColor: AppColors.darkPrimaryColor),
               ],
             )));
   }

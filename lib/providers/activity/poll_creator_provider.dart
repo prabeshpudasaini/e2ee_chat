@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:e2ee_chat/services/toast_message_show.dart';
-import 'package:e2ee_chat/config/types.dart';
 
 class PollCreatorProvider extends ChangeNotifier {
   final TextEditingController _questionController = TextEditingController();

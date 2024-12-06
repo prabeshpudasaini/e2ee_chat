@@ -80,7 +80,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   commonElevatedButton(
                       btnText: "Submit",
                       onPressed: _onSubmitInformation,
-                      bgColor: AppColors.darkBorderGreenColor),
+                      bgColor: AppColors.darkPrimaryColor),
                 if (!_isLoading)
                   const SizedBox(
                     height: 15,
@@ -188,7 +188,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
       height: 3,
       child: const LinearProgressIndicator(
         backgroundColor: AppColors.pureWhiteColor,
-        color: AppColors.darkBorderGreenColor,
+        color: AppColors.darkPrimaryColor,
       ),
     );
   }

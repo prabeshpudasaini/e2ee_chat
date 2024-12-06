@@ -80,8 +80,8 @@ class AboutScreen extends StatelessWidget {
                 style: TextStyleCollection.secondaryHeadingTextStyle.copyWith(
                     fontSize: 14,
                     color: _isDarkMode
-                        ? AppColors.darkBorderGreenColor
-                        : AppColors.lightBorderGreenColor,
+                        ? AppColors.darkPrimaryColor
+                        : AppColors.lightPrimaryColor,
                     decoration: TextDecoration.underline)),
           ),
         ),
@@ -98,8 +98,8 @@ class AboutScreen extends StatelessWidget {
             fontSize: 20,
             fontWeight: FontWeight.w600,
             color: _isDarkMode
-                ? AppColors.darkBorderGreenColor
-                : AppColors.lightBorderGreenColor),
+                ? AppColors.darkPrimaryColor
+                : AppColors.lightPrimaryColor),
       ),
     );
   }
@@ -130,8 +130,8 @@ class AboutScreen extends StatelessWidget {
         textAlign: TextAlign.center,
         style: TextStyleCollection.terminalTextStyle.copyWith(
             color: _isDarkMode
-                ? AppColors.darkBorderGreenColor
-                : AppColors.lightBorderGreenColor,
+                ? AppColors.darkPrimaryColor
+                : AppColors.lightPrimaryColor,
             fontSize: 14),
       ),
     );

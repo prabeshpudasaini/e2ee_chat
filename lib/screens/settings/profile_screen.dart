@@ -110,7 +110,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
       height: 3,
       child: const LinearProgressIndicator(
         backgroundColor: AppColors.pureWhiteColor,
-        color: AppColors.darkBorderGreenColor,
+        color: AppColors.darkPrimaryColor,
       ),
     );
   }
@@ -186,7 +186,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(100),
             color: AppColors.getImageBgColor(_isDarkMode),
-            border: Border.all(color: AppColors.darkBorderGreenColor, width: 3),
+            border: Border.all(color: AppColors.darkPrimaryColor, width: 3),
             image: _editableProfileData["profilePic"]?.startsWith("https")
                 ? DecorationImage(
                     fit: BoxFit.cover,
@@ -207,8 +207,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
       margin: const EdgeInsets.only(top: 20 + 80, left: 90),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(100),
-        color: AppColors.darkBorderGreenColor,
-        border: Border.all(color: AppColors.darkBorderGreenColor, width: 2),
+        color: AppColors.darkPrimaryColor,
+        border: Border.all(color: AppColors.darkPrimaryColor, width: 2),
       ),
       child: InkWell(
         onTap: _imageTakingOption,
@@ -256,7 +256,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
       children: [
         Icon(
           iconData,
-          color: AppColors.darkBorderGreenColor,
+          color: AppColors.darkPrimaryColor,
           size: 25,
         ),
         const SizedBox(

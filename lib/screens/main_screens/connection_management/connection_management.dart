@@ -109,13 +109,20 @@ class _ConnectionManagementScreenState extends State<ConnectionManagementScreen>
       width: _width,
       child: TabBar(
         controller: _tabController,
-        labelColor: AppColors.normalBlueColor,
+        labelColor: _isDarkMode
+            ? AppColors.darkPrimaryColor
+            : AppColors.lightPrimaryColor,
         indicatorPadding: const EdgeInsets.only(left: 15.0, right: 15.0),
         unselectedLabelColor: _isDarkMode
             ? AppColors.pureWhiteColor
             : AppColors.lightChatConnectionTextColor,
-        indicator: const UnderlineTabIndicator(
-          borderSide: BorderSide(width: 2.0, color: AppColors.normalBlueColor),
+        indicator: UnderlineTabIndicator(
+          borderSide: BorderSide(
+            width: 2.0,
+            color: _isDarkMode
+                ? AppColors.darkPrimaryColor
+                : AppColors.lightPrimaryColor,
+          ),
         ),
         automaticIndicatorColorAdjustment: true,
         labelStyle: TextStyleCollection.secondaryHeadingTextStyle

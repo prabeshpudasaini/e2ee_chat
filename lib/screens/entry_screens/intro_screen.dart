@@ -4,7 +4,6 @@ import 'package:e2ee_chat/config/text_style_collection.dart';
 import 'package:e2ee_chat/db_operations/firestore_operations.dart';
 import 'package:e2ee_chat/auth/google_auth.dart';
 import 'package:e2ee_chat/screens/entry_screens/sign_in_screen.dart';
-import 'package:e2ee_chat/services/local_database_services.dart';
 import 'package:e2ee_chat/services/toast_message_show.dart';
 import 'package:e2ee_chat/config/types.dart';
 import 'package:provider/provider.dart';
@@ -31,7 +30,7 @@ class _IntroScreensState extends State<IntroScreens> {
   final PageController _controller = PageController();
   final GoogleAuth _googleAuth = GoogleAuth();
   final DBOperations _dbOperations = DBOperations();
-  final LocalStorage _localStorage = LocalStorage();
+  // final LocalStorage _localStorage = LocalStorage();
 
   bool _isLoading = false;
 
@@ -86,7 +85,7 @@ class _IntroScreensState extends State<IntroScreens> {
               ),
             if (_isLoading) _loadingIndicator(),
             SizedBox(
-              height: _isLoading ? 95 : 140,
+              height: _isLoading ? 95 : 90,
             ),
             _logoSection(),
             const SizedBox(
@@ -121,7 +120,7 @@ class _IntroScreensState extends State<IntroScreens> {
       height: 3,
       child: const LinearProgressIndicator(
         backgroundColor: AppColors.pureWhiteColor,
-        color: AppColors.darkBorderGreenColor,
+        color: AppColors.darkPrimaryColor,
       ),
     );
   }
@@ -130,7 +129,7 @@ class _IntroScreensState extends State<IntroScreens> {
     return Center(
       child: Image.asset(
         AppImages.mainSplashScreenLogo,
-        width: MediaQuery.of(context).size.width / 2.7,
+        width: MediaQuery.of(context).size.width / 2,
       ),
     );
   }

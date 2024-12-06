@@ -72,7 +72,7 @@ class ChatBoxHeaderSection extends StatelessWidget {
                 ? AppColors.searchBarBgDarkMode.withOpacity(0.5)
                 : AppColors.searchBarBgLightMode.withOpacity(0.5),
             borderRadius: BorderRadius.circular(100),
-            border: Border.all(color: AppColors.darkBorderGreenColor, width: 2),
+            border: Border.all(color: AppColors.darkPrimaryColor, width: 2),
             image: Secure.decode(connectionData["profilePic"]) == ''
                 ? null
                 : DecorationImage(
@@ -299,15 +299,15 @@ class ChatBoxHeaderSection extends StatelessWidget {
                     btnText: "Delete For Me",
                     onPressed: _deleteMyMsgOnly,
                     borderColor: _isDarkMode
-                        ? AppColors.darkBorderGreenColor
-                        : AppColors.lightBorderGreenColor),
+                        ? AppColors.darkPrimaryColor
+                        : AppColors.lightPrimaryColor),
                 if (_eligibleForDeleteForEveryOne)
                   commonTextButton(
                       btnText: "Delete For Everyone",
                       onPressed: _deleteForEveryOne,
                       borderColor: _isDarkMode
-                          ? AppColors.darkBorderGreenColor
-                          : AppColors.lightBorderGreenColor),
+                          ? AppColors.darkPrimaryColor
+                          : AppColors.lightPrimaryColor),
               ],
             ));
   }

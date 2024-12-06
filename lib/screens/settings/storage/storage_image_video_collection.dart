@@ -122,7 +122,7 @@ class StorageImageAndVideoCollection extends StatelessWidget {
         icon: const Icon(
           Icons.play_circle_outline,
           size: 40,
-          color: AppColors.darkBorderGreenColor,
+          color: AppColors.darkPrimaryColor,
         ),
         onPressed: () async {
           /// When Integrate Functions later, Open Video from phone app write here

@@ -76,7 +76,7 @@ class _PollCreatorScreenState extends State<PollCreatorScreen> {
             letterSpacing: 1.0,
             color: _isDarkMode
                 ? AppColors.pureWhiteColor
-                : AppColors.lightBorderGreenColor),
+                : AppColors.lightPrimaryColor),
       ),
     );
   }
@@ -110,12 +110,12 @@ class _PollCreatorScreenState extends State<PollCreatorScreen> {
               borderSide: BorderSide(
                   color: _isDarkMode
                       ? AppColors.pureWhiteColor
-                      : AppColors.lightBorderGreenColor)),
+                      : AppColors.lightPrimaryColor)),
           focusedBorder: UnderlineInputBorder(
               borderSide: BorderSide(
                   color: _isDarkMode
                       ? AppColors.pureWhiteColor
-                      : AppColors.lightBorderGreenColor)),
+                      : AppColors.lightPrimaryColor)),
         ),
       ),
     );
@@ -168,8 +168,8 @@ class _PollCreatorScreenState extends State<PollCreatorScreen> {
               onPressed: () => _pollProvider.addNewAnswerController(),
               fontSize: 14,
               bgColor: _isDarkMode
-                  ? AppColors.darkBorderGreenColor
-                  : AppColors.lightBorderGreenColor),
+                  ? AppColors.darkPrimaryColor
+                  : AppColors.lightPrimaryColor),
       ],
     );
   }

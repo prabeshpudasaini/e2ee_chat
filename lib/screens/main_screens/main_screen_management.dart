@@ -8,7 +8,6 @@ import 'package:e2ee_chat/providers/main_screen_provider.dart';
 import 'package:e2ee_chat/screens/common/scroll_to_hide_widget.dart';
 import 'package:e2ee_chat/screens/main_screens/home_screen.dart';
 import 'package:e2ee_chat/screens/main_screens/settings_screen.dart';
-import 'package:e2ee_chat/services/download_operations.dart';
 import 'package:e2ee_chat/services/encryption_operations.dart';
 import 'package:e2ee_chat/services/local_database_services.dart';
 import 'package:e2ee_chat/services/system_file_management.dart';
@@ -153,8 +152,8 @@ class _MainScreenState extends State<MainScreen> with WidgetsBindingObserver {
             IconButton(
               color: _currentBottomIconIndex == 0
                   ? _isDarkMode
-                      ? AppColors.darkBorderGreenColor
-                      : AppColors.lightBorderGreenColor
+                      ? AppColors.darkPrimaryColor
+                      : AppColors.lightPrimaryColor
                   : _isDarkMode
                       ? AppColors.darkInactiveIconColor
                       : AppColors.lightInactiveIconColor,
@@ -163,8 +162,8 @@ class _MainScreenState extends State<MainScreen> with WidgetsBindingObserver {
                   width: 30,
                   color: _currentBottomIconIndex == 0
                       ? _isDarkMode
-                          ? AppColors.darkBorderGreenColor
-                          : AppColors.lightBorderGreenColor
+                          ? AppColors.darkPrimaryColor
+                          : AppColors.lightPrimaryColor
                       : _isDarkMode
                           ? AppColors.darkInactiveIconColor
                           : AppColors.lightInactiveIconColor),
@@ -176,8 +175,8 @@ class _MainScreenState extends State<MainScreen> with WidgetsBindingObserver {
             IconButton(
               color: _currentBottomIconIndex == 1
                   ? _isDarkMode
-                      ? AppColors.darkBorderGreenColor
-                      : AppColors.lightBorderGreenColor
+                      ? AppColors.darkPrimaryColor
+                      : AppColors.lightPrimaryColor
                   : _isDarkMode
                       ? AppColors.darkInactiveIconColor
                       : AppColors.lightInactiveIconColor,
@@ -186,8 +185,8 @@ class _MainScreenState extends State<MainScreen> with WidgetsBindingObserver {
                   width: 30,
                   color: _currentBottomIconIndex == 1
                       ? _isDarkMode
-                          ? AppColors.darkBorderGreenColor
-                          : AppColors.lightBorderGreenColor
+                          ? AppColors.darkPrimaryColor
+                          : AppColors.lightPrimaryColor
                       : _isDarkMode
                           ? AppColors.darkInactiveIconColor
                           : AppColors.lightInactiveIconColor),
@@ -199,8 +198,8 @@ class _MainScreenState extends State<MainScreen> with WidgetsBindingObserver {
             IconButton(
               color: _currentBottomIconIndex == 2
                   ? _isDarkMode
-                      ? AppColors.darkBorderGreenColor
-                      : AppColors.lightBorderGreenColor
+                      ? AppColors.darkPrimaryColor
+                      : AppColors.lightPrimaryColor
                   : _isDarkMode
                       ? AppColors.darkInactiveIconColor
                       : AppColors.lightInactiveIconColor,
@@ -209,8 +208,8 @@ class _MainScreenState extends State<MainScreen> with WidgetsBindingObserver {
                   width: 30,
                   color: _currentBottomIconIndex == 2
                       ? _isDarkMode
-                          ? AppColors.darkBorderGreenColor
-                          : AppColors.lightBorderGreenColor
+                          ? AppColors.darkPrimaryColor
+                          : AppColors.lightPrimaryColor
                       : _isDarkMode
                           ? AppColors.darkInactiveIconColor
                           : AppColors.lightInactiveIconColor),

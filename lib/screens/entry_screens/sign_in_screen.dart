@@ -6,7 +6,6 @@ import 'package:e2ee_chat/screens/entry_screens/sign_up_screen.dart';
 import 'package:e2ee_chat/services/local_database_services.dart';
 import 'package:e2ee_chat/services/navigation_management.dart';
 import 'package:e2ee_chat/services/toast_message_show.dart';
-import 'package:e2ee_chat/config/types.dart';
 
 import '../../config/colors_collection.dart';
 import '../../config/text_style_collection.dart';
@@ -81,7 +80,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   commonElevatedButton(
                       btnText: "Submit",
                       onPressed: _onSubmitInformation,
-                      bgColor: AppColors.darkBorderGreenColor),
+                      bgColor: AppColors.darkPrimaryColor),
                 if (!_isLoading)
                   const SizedBox(
                     height: 15,
@@ -144,7 +143,7 @@ class _SignInScreenState extends State<SignInScreen> {
       height: 3,
       child: const LinearProgressIndicator(
         backgroundColor: AppColors.pureWhiteColor,
-        color: AppColors.darkBorderGreenColor,
+        color: AppColors.darkPrimaryColor,
       ),
     );
   }

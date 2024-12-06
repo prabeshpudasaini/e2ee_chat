@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:e2ee_chat/providers/connection_collection_provider.dart';
 import 'package:e2ee_chat/screens/common/image_showing_screen.dart';
 import 'package:e2ee_chat/services/navigation_management.dart';
@@ -80,8 +79,8 @@ class CommonChatListLayout {
             borderRadius: BorderRadius.circular(100),
             border: Border.all(
                 color: _isDarkMode
-                    ? AppColors.darkBorderGreenColor
-                    : AppColors.lightBorderGreenColor,
+                    ? AppColors.darkPrimaryColor
+                    : AppColors.lightPrimaryColor,
                 width: 3),
             image: photo == null
                 ? null
@@ -145,7 +144,7 @@ class CommonChatListLayout {
                     fontSize: 14,
                     color: _isDarkMode
                         ? AppColors.pureWhiteColor
-                        : AppColors.lightBorderGreenColor),
+                        : AppColors.lightPrimaryColor),
               ),
             ),
           const SizedBox(
@@ -157,8 +156,8 @@ class CommonChatListLayout {
               height: 25,
               decoration: BoxDecoration(
                   color: _isDarkMode
-                      ? AppColors.darkBorderGreenColor
-                      : AppColors.lightBorderGreenColor,
+                      ? AppColors.darkPrimaryColor
+                      : AppColors.lightPrimaryColor,
                   borderRadius: BorderRadius.circular(100)),
               child: Center(
                   child: Text(

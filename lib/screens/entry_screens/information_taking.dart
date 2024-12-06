@@ -134,7 +134,7 @@ class _InformationTakingScreenState extends State<InformationTakingScreen> {
                   commonElevatedButton(
                       btnText: "Submit",
                       onPressed: _onSubmitInformation,
-                      bgColor: AppColors.darkBorderGreenColor),
+                      bgColor: AppColors.darkPrimaryColor),
                 const SizedBox(
                   height: 20,
                 ),
@@ -167,7 +167,7 @@ class _InformationTakingScreenState extends State<InformationTakingScreen> {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(100),
             color: AppColors.lightBlueColor.withOpacity(0.2),
-            border: Border.all(color: AppColors.darkBorderGreenColor, width: 3),
+            border: Border.all(color: AppColors.darkPrimaryColor, width: 3),
             image: userData["profilePic"] != null
                 ? (userData["profilePic"].startsWith("https") ||
                         userData["profilePic"].startsWith("http"))
@@ -191,8 +191,8 @@ class _InformationTakingScreenState extends State<InformationTakingScreen> {
       margin: const EdgeInsets.only(top: 20 + 80, left: 90),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(100),
-        color: AppColors.darkBorderGreenColor,
-        border: Border.all(color: AppColors.darkBorderGreenColor, width: 2),
+        color: AppColors.darkPrimaryColor,
+        border: Border.all(color: AppColors.darkPrimaryColor, width: 2),
       ),
       child: InkWell(
         onTap: _imageTakingOption,
@@ -258,7 +258,7 @@ class _InformationTakingScreenState extends State<InformationTakingScreen> {
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(100),
                 color: index == 0
-                    ? AppColors.darkBorderGreenColor
+                    ? AppColors.darkPrimaryColor
                     : AppColors.personIconBgColor),
             child: IconCollection.iconsCollection[index][0],
           ),
@@ -353,7 +353,7 @@ class _InformationTakingScreenState extends State<InformationTakingScreen> {
       height: 3,
       child: const LinearProgressIndicator(
         backgroundColor: AppColors.pureWhiteColor,
-        color: AppColors.darkBorderGreenColor,
+        color: AppColors.darkPrimaryColor,
       ),
     );
   }

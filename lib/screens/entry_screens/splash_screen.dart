@@ -3,8 +3,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:e2ee_chat/config/colors_collection.dart';
 import 'package:e2ee_chat/config/images_path_collection.dart';
-import 'package:e2ee_chat/config/text_collection.dart';
-import 'package:e2ee_chat/config/text_style_collection.dart';
 import 'package:e2ee_chat/providers/incoming_data_provider.dart';
 import 'package:e2ee_chat/providers/theme_provider.dart';
 import 'package:e2ee_chat/screens/entry_screens/intro_screen.dart';

@@ -1,17 +1,6 @@
 import 'package:dio/dio.dart';
-import 'package:flutter/material.dart';
-import 'package:e2ee_chat/config/text_collection.dart';
-import 'package:e2ee_chat/providers/main_screen_provider.dart';
 import 'package:e2ee_chat/services/directory_management.dart';
-import 'package:new_version_plus/new_version_plus.dart';
-import 'package:provider/provider.dart';
-import 'package:url_launcher/url_launcher.dart';
 
-import '../config/colors_collection.dart';
-import '../config/text_style_collection.dart';
-import '../providers/theme_provider.dart';
-import '../screens/common/button.dart';
-import 'debugging.dart';
 
 class DownloadOperations {
   final Dio _dio = Dio();

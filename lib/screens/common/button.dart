@@ -12,12 +12,12 @@ commonTextButton(
     style: TextButton.styleFrom(
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(8),
-            side: BorderSide(
-                color: borderColor ?? AppColors.darkBorderGreenColor))),
+            side:
+                BorderSide(color: borderColor ?? AppColors.darkPrimaryColor))),
     child: Text(
       btnText,
       style: TextStyleCollection.terminalTextStyle.copyWith(
-          color: textColor ?? AppColors.darkBorderGreenColor,
+          color: textColor ?? AppColors.darkPrimaryColor,
           fontSize: fontSize ?? 12),
     ),
     onPressed: onPressed,
@@ -31,7 +31,10 @@ commonElevatedButton(
     double? fontSize}) {
   return ElevatedButton(
     onPressed: onPressed,
-    child: Text(btnText),
+    child: Text(
+      btnText,
+      style: const TextStyle(color: AppColors.pureWhiteColor),
+    ),
     style: ElevatedButton.styleFrom(
         backgroundColor: bgColor ?? AppColors.oppositeMsgDarkModeColor,
         textStyle: TextStyleCollection.terminalTextStyle

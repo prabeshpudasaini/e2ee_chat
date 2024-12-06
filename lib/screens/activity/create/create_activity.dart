@@ -3,14 +3,12 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:e2ee_chat/config/colors_collection.dart';
 import 'package:e2ee_chat/config/time_collection.dart';
 import 'package:e2ee_chat/db_operations/firestore_operations.dart';
 import 'package:e2ee_chat/providers/activity/poll_creator_provider.dart';
 import 'package:e2ee_chat/screens/common/video_show_screen.dart';
 import 'package:e2ee_chat/services/device_specific_operations.dart';
-import 'package:e2ee_chat/services/local_data_management.dart';
 import 'package:e2ee_chat/services/toast_message_show.dart';
 import 'package:e2ee_chat/config/types.dart';
 import 'package:loading_overlay/loading_overlay.dart';
@@ -67,7 +65,7 @@ class _CreateActivityState extends State<CreateActivity> {
       isLoading: _isLoading,
       color: AppColors.pureBlackColor.withOpacity(0.6),
       progressIndicator: const CircularProgressIndicator(
-        color: AppColors.lightBorderGreenColor,
+        color: AppColors.lightPrimaryColor,
       ),
       child: WillPopScope(
         onWillPop: () async {
@@ -214,7 +212,7 @@ class _CreateActivityState extends State<CreateActivity> {
     );
   }
 
-  _sendButton({Color bgColor = AppColors.darkBorderGreenColor}) {
+  _sendButton({Color bgColor = AppColors.darkPrimaryColor}) {
     return Container(
       margin: EdgeInsets.only(
           bottom: widget.activityContentType == ActivityContentType.text

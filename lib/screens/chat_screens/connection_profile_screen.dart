@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:e2ee_chat/db_operations/firestore_operations.dart';
-import 'package:e2ee_chat/screens/settings/chat_wallpaper/chat_wallpaper_category_screen.dart';
 import 'package:e2ee_chat/services/encryption_operations.dart';
 import 'package:e2ee_chat/services/local_database_services.dart';
 import 'package:provider/provider.dart';
@@ -129,7 +128,7 @@ class _ConnectionProfileScreenState extends State<ConnectionProfileScreen> {
       height: 3,
       child: const LinearProgressIndicator(
         backgroundColor: AppColors.pureWhiteColor,
-        color: AppColors.darkBorderGreenColor,
+        color: AppColors.darkPrimaryColor,
       ),
     );
   }
@@ -201,7 +200,7 @@ class _ConnectionProfileScreenState extends State<ConnectionProfileScreen> {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(100),
             color: AppColors.getImageBgColor(_isDarkMode),
-            border: Border.all(color: AppColors.darkBorderGreenColor, width: 3),
+            border: Border.all(color: AppColors.darkPrimaryColor, width: 3),
             image: _decodedProfilePic.startsWith("https")
                 ? DecorationImage(
                     fit: BoxFit.cover,
@@ -255,7 +254,7 @@ class _ConnectionProfileScreenState extends State<ConnectionProfileScreen> {
       children: [
         Icon(
           iconData,
-          color: AppColors.darkBorderGreenColor,
+          color: AppColors.darkPrimaryColor,
           size: 25,
         ),
         const SizedBox(
@@ -340,7 +339,7 @@ class _ConnectionProfileScreenState extends State<ConnectionProfileScreen> {
       children: [
         Icon(
           iconData,
-          color: startIconColor ?? AppColors.darkBorderGreenColor,
+          color: startIconColor ?? AppColors.darkPrimaryColor,
           size: 25,
         ),
         const SizedBox(
@@ -382,8 +381,8 @@ class _ConnectionProfileScreenState extends State<ConnectionProfileScreen> {
               value: _isNotificationActive,
               onChanged: _onNotificationChanged,
               activeTrackColor: _isDarkMode
-                  ? AppColors.darkBorderGreenColor.withOpacity(0.8)
-                  : AppColors.lightBorderGreenColor.withOpacity(0.8),
+                  ? AppColors.darkPrimaryColor.withOpacity(0.8)
+                  : AppColors.lightPrimaryColor.withOpacity(0.8),
               activeColor: AppColors.locationIconBgColor,
               inactiveTrackColor: _isDarkMode
                   ? AppColors.oppositeMsgDarkModeColor

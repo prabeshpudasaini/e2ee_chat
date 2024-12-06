@@ -5,5 +5,10 @@
     "cSpell.words": [
         "autocorrect"
     ],
-    "dart.documentation": "full"
+    "dart.documentation": "full",
+    "cSpell.language": "en,en-GB,en-US,lorem",
+    "cSpell.enableFiletypes": [
+        "dart",
+        "nix"
+    ]
 }

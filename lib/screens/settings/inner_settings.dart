@@ -127,8 +127,8 @@ class _InnerSettingsScreenState extends State<InnerSettingsScreen> {
         value: _isNotificationActive,
         onChanged: _onChanged,
         activeTrackColor: _isDarkMode
-            ? AppColors.darkBorderGreenColor.withOpacity(0.8)
-            : AppColors.lightBorderGreenColor.withOpacity(0.8),
+            ? AppColors.darkPrimaryColor.withOpacity(0.8)
+            : AppColors.lightPrimaryColor.withOpacity(0.8),
         activeColor: AppColors.locationIconBgColor,
         inactiveTrackColor: _isDarkMode
             ? AppColors.oppositeMsgDarkModeColor

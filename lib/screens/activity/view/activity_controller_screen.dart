@@ -1,5 +1,4 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:e2ee_chat/config/colors_collection.dart';
 import 'package:e2ee_chat/config/images_path_collection.dart';
@@ -15,8 +14,6 @@ import 'package:e2ee_chat/config/types.dart';
 import 'package:e2ee_chat/services/encryption_operations.dart';
 import 'package:e2ee_chat/services/local_database_services.dart';
 import 'package:e2ee_chat/services/toast_message_show.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter/widgets.dart';
 import 'package:loading_overlay/loading_overlay.dart';
 import 'package:provider/provider.dart';
 
@@ -107,7 +104,7 @@ class _ActivityControllerState extends State<ActivityController>
       isLoading: _isLoading,
       color: AppColors.pureBlackColor.withOpacity(0.6),
       progressIndicator: const CircularProgressIndicator(
-        color: AppColors.lightBorderGreenColor,
+        color: AppColors.lightPrimaryColor,
       ),
       child: WillPopScope(
         onWillPop: () async {
@@ -425,9 +422,9 @@ class _ActivityControllerState extends State<ActivityController>
           width: double.maxFinite,
           height: 50,
           color: _getBgColor(),
-          child: Row(
+          child: const Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
+            children: [
               Icon(
                 Icons.keyboard_arrow_up_outlined,
                 color: AppColors.pureWhiteColor,
@@ -512,7 +509,7 @@ class _ActivityControllerState extends State<ActivityController>
   }
 
   _sendButton(
-      {Color bgColor = AppColors.darkBorderGreenColor,
+      {Color bgColor = AppColors.darkPrimaryColor,
       ActivityModel? currentActivityData}) {
     return InkWell(
       onTap: () => _sendActivityReplyMsg(currentActivityData),

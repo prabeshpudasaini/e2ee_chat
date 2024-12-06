@@ -22,7 +22,7 @@ dataFetchingOperations(BuildContext context, _createdBefore, currUserId) {
   final LocalStorage _localStorage = LocalStorage();
   final DBOperations _dbOperations = DBOperations();
 
-  ToastMsg.showSuccessToast("Account Created Before", context: context);
+  // ToastMsg.showSuccessToast("Account Created Before", context: context);
   storagePermissionForStoreCurrAccData(context, () async {
     await _localStorage.storeDataForCurrAccount(
         _createdBefore["data"], currUserId);

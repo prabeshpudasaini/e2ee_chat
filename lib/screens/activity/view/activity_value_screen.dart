@@ -202,7 +202,7 @@ class _ActivityViewerState extends State<ActivityViewer> {
 
   _pollShowScreen() {
     final _pollShowProvider = Provider.of<PollShowProvider>(context);
-    final _pollAnsCollection = _pollShowProvider.getPollAnswers();
+    // final _pollAnsCollection = _pollShowProvider.getPollAnswers();
 
     debugShow("Updated Data: ${_pollShowProvider.getIndexedAnswerValue(0)}");
 
@@ -211,9 +211,9 @@ class _ActivityViewerState extends State<ActivityViewer> {
       height: MediaQuery.of(context).size.height,
       color: AppColors.backgroundDarkMode,
       padding: const EdgeInsets.all(20),
-      child: Column(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
+        children: [
           // Polls(
           //   backgroundColor: AppColors.pureWhiteColor,
           //   currentUser: _pollShowProvider.getCurrentUser(),

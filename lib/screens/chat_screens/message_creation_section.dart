@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:e2ee_chat/config/icon_collection.dart';
 import 'package:e2ee_chat/config/images_path_collection.dart';
 import 'package:e2ee_chat/config/time_collection.dart';
-import 'package:e2ee_chat/model/chat_message_model.dart';
 import 'package:e2ee_chat/providers/chat/chat_creation_section_provider.dart';
 import 'package:e2ee_chat/providers/chat/messaging_provider.dart';
 import 'package:e2ee_chat/providers/sound_record_provider.dart';
@@ -354,7 +353,7 @@ class MessageCreationSection extends StatelessWidget {
           height: 40,
           padding: EdgeInsets.all(_showVoiceIcon ? 0 : 8),
           decoration: BoxDecoration(
-            color: AppColors.lightBorderGreenColor,
+            color: AppColors.lightPrimaryColor,
             borderRadius: BorderRadius.circular(100),
           ),
           child: !_showVoiceIcon
@@ -386,7 +385,7 @@ class MessageCreationSection extends StatelessWidget {
   }
 
   Widget _emojiCollectionWidget() {
-    return SizedBox(
+    return const SizedBox(
         // width: MediaQuery.of(context).size.width,
         // height: 250,
         // child: EmojiPicker(
@@ -472,7 +471,7 @@ class MessageCreationSection extends StatelessWidget {
             border: Border.all(
                 color: _isDarkMode
                     ? AppColors.splashScreenColor
-                    : AppColors.lightBorderGreenColor)),
+                    : AppColors.lightPrimaryColor)),
         child: Column(
           children: [
             _replyMsgContainerUpperSection(),

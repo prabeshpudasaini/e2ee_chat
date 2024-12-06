@@ -6,13 +6,16 @@ import 'package:e2ee_chat/services/local_data_management.dart';
 class Secure {
   static Key _key =
       Key.fromBase64(DataManagement.getEnvData(EnvFileKey.encryptKey) ?? '');
-  static IV _iv = IV.fromLength(16);
+  static IV _iv = IV.fromBase64(SecretData.iv);
   static Encrypter _makeEncryption =
       Encrypter(AES(_key, mode: AESMode.ctr, padding: null));
 
   static String? encode(String? plainText) {
     if (plainText == null) return null;
     final Encrypted encrypted = _makeEncryption.encrypt(plainText, iv: _iv);
+    print(_iv.base64);
+    print(_key.base64);
+
     return encrypted.base64;
   }
 
@@ -22,13 +25,15 @@ class Secure {
 
       if (initialize) {
         _key = Key.fromBase64(SecretData.encryptKey);
-        _iv = IV.fromLength(16);
+        _iv = IV.fromBase64(SecretData.iv);
         _makeEncryption =
             Encrypter(AES(_key, mode: AESMode.ctr, padding: null));
       }
 
       final String decrypted =
           _makeEncryption.decrypt64(encodedStringForm, iv: _iv);
+      print(_iv.base64);
+      print(_key.base64);
 
       return decrypted;
     } catch (e) {

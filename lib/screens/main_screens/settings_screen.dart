@@ -1,8 +1,6 @@
 import 'package:e2ee_chat/screens/entry_screens/intro_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:e2ee_chat/config/text_collection.dart';
-import 'package:e2ee_chat/screens/settings/chat_wallpaper/chat_wallpaper_category_screen.dart';
 import 'package:e2ee_chat/screens/settings/inner_settings.dart';
 import 'package:e2ee_chat/screens/settings/support/support_management.dart';
 import 'package:e2ee_chat/services/input_system_services.dart';
