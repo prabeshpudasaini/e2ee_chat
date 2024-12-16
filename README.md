@@ -1,3 +1,31 @@
+<a href="https://idx.google.com/import?url=https%3A%2F%2Fgithub.com%2Fprabeshpudasaini%2Fe2ee_chat">
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://cdn.idx.dev/btn/open_dark_32.svg">
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://cdn.idx.dev/btn/open_light_32.svg">
+    <img
+      height="32"
+      alt="Open in IDX"
+      src="https://cdn.idx.dev/btn/open_purple_32.svg">
+  </picture>
+</a>
+<a href="https://vscode.dev/github/prabeshpudasaini/e2ee_chat">
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://cdn.idx.dev/btn/open_dark_32.svg">
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://cdn.idx.dev/btn/open_light_32.svg">
+    <img
+      height="32"
+      alt="Open in VS Code Web"
+      src="https://cdn.idx.dev/btn/open_purple_32.svg">
+  </picture>
+</a>
 
 ![Dart](https://img.shields.io/badge/Programming_Language-Dart-blue.svg) 
 ![Flutter](https://img.shields.io/badge/Software_Development_Kit(SDK)-Flutter-blue.svg)
